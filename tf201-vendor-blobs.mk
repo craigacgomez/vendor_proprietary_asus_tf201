@@ -182,5 +182,4 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/asus/tf201/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/asus/tf201/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/asus/tf201/proprietary/vendor/lib/hw/power.cardhu.so:system/vendor/lib/hw/power.cardhu.so \
     vendor/asus/tf201/proprietary/xbin/rfcomm:system/xbin/rfcomm
