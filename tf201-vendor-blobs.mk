@@ -22,13 +22,24 @@
 #    vendor/asus/tf201/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so
 
 PRODUCT_COPY_FILES += \
+    vendor/asus/tf201/proprietary/bin/camera_fw_check:system/bin/camera_fw_check \
+    vendor/asus/tf201/proprietary/bin/isp_fw_update:system/bin/isp_fw_update \
+    vendor/asus/tf201/proprietary/bin/touch_fw_update:system/bin/touch_fw_update \
     vendor/asus/tf201/proprietary/bin/sensors-config:system/bin/sensors-config \
     vendor/asus/tf201/proprietary/bin/glgps:system/bin/glgps \
+    vendor/asus/tf201/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
+    vendor/asus/tf201/proprietary/bin/pppd_btdun:system/bin/pppd_btdun \
+    vendor/asus/tf201/proprietary/bin/ps3service:system/bin/ps3service \
+    vendor/asus/tf201/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
+    vendor/asus/tf201/proprietary/bin/tegrastats:system/bin/tegrastats \
     vendor/asus/tf201/proprietary/bin/tf_daemon:system/bin/tf_daemon \
+    vendor/asus/tf201/proprietary/bin/wvdrmserver:system/bin/wvdrmserver \
+    vendor/asus/tf201/proprietary/data/srs_processing.cfg:system/data/srs_processing.cfg \
     vendor/asus/tf201/proprietary/etc/enctune.conf:system/etc/enctune.conf \
     vendor/asus/tf201/proprietary/etc/u-blox.conf:system/etc/u-blox.conf \
     vendor/asus/tf201/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/asus/tf201/proprietary/etc/dbus.conf:system/etc/dbus.conf \
+    vendor/asus/tf201/proprietary/etc/BtService.sh:system/etc/BtService.sh \
     vendor/asus/tf201/proprietary/etc/nvaudio_conf_RT5631.xml:system/etc/nvaudio_conf_RT5631.xml \
     vendor/asus/tf201/proprietary/etc/nvaudio_conf_RT5642.xml:system/etc/nvaudio_conf_RT5642.xml \
     vendor/asus/tf201/proprietary/etc/nvaudio_conf_WM8903.xml:system/etc/nvaudio_conf_WM8903.xml \
@@ -50,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/asus/tf201/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
     vendor/asus/tf201/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
+    vendor/asus/tf201/proprietary/lib/hw/ts.default.so:system/lib/hw/ts.default.so \
     vendor/asus/tf201/proprietary/lib/hw/sensors6050.cardhu.so:system/lib/hw/sensors6050.cardhu.so \
     vendor/asus/tf201/proprietary/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
     vendor/asus/tf201/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
@@ -61,6 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/asus/tf201/proprietary/lib/hw/lights.cardhu.so:system/lib/hw/lights.cardhu.so \
     vendor/asus/tf201/proprietary/lib/hw/gpsdongle.tegra.so:system/lib/hw/gpsdongle.tegra.so \
+    vendor/asus/tf201/proprietary/lib/hw/gpsinternal.tegra.so:system/lib/hw/gpsinternal.tegra.so \
     vendor/asus/tf201/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/asus/tf201/proprietary/lib/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \
     vendor/asus/tf201/proprietary/lib/libnvparser.so:system/lib/libnvparser.so \
@@ -74,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/lib/libnvmmlite_image.so:system/lib/libnvmmlite_image.so \
     vendor/asus/tf201/proprietary/lib/libnvremoteprotocol.so:system/lib/libnvremoteprotocol.so \
     vendor/asus/tf201/proprietary/lib/libEGL.so:system/lib/libEGL.so \
+    vendor/asus/tf201/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
     vendor/asus/tf201/proprietary/lib/libnvmmlite_msaudio.so:system/lib/libnvmmlite_msaudio.so \
     vendor/asus/tf201/proprietary/lib/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     vendor/asus/tf201/proprietary/lib/libami_sensor_mw.so:system/lib/libami_sensor_mw.so \
@@ -130,6 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
     vendor/asus/tf201/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/asus/tf201/proprietary/lib/libsensors.ltr558als.so:system/lib/libsensors.ltr558als.so \
+    vendor/asus/tf201/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/asus/tf201/proprietary/lib/libnvglsi.so:system/lib/libnvglsi.so \
     vendor/asus/tf201/proprietary/lib/libnvodm_misc.so:system/lib/libnvodm_misc.so \
     vendor/asus/tf201/proprietary/lib/libnvhdmi3dplay_jni.so:system/lib/libnvhdmi3dplay_jni.so \
@@ -144,6 +159,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
     vendor/asus/tf201/proprietary/lib/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     vendor/asus/tf201/proprietary/lib/libnvos.so:system/lib/libnvos.so \
+    vendor/asus/tf201/proprietary/lib/libWVDrmUtils.so:system/lib/libWVDrmUtils.so \
+    vendor/asus/tf201/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/asus/tf201/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
     vendor/asus/tf201/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
     vendor/asus/tf201/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
@@ -161,3 +178,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf201/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/asus/tf201/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/asus/tf201/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+    vendor/asus/tf201/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/asus/tf201/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/asus/tf201/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/asus/tf201/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/asus/tf201/proprietary/vendor/lib/hw/power.cardhu.so:system/vendor/lib/hw/power.cardhu.so \
+    vendor/asus/tf201/proprietary/xbin/rfcomm:system/xbin/rfcomm
