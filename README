@@ -1,4 +1,6 @@
-Vendor tree for the ASUS Transformer Prime TF201. Contains the device proprietary files, drivers and firmware for the new JB 3.1 kernel & bootloader.
+AOKP & CyanogenMod 10 vendor tree for Jelly Bean for the ASUS Transformer Prime TF201.
 
-Credits to the AndroidRoot & CyanogenMod teams.
+Uses the new Jelly Bean files and requires the new Jelly Bean kernel & bootloader.
+
+Credits to AndroidRoot & CyanogenMod.
 Modifications by Craig Gomez (craigacgomez)
